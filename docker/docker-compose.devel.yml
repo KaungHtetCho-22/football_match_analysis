@@ -1,0 +1,20 @@
+services:
+  football_match_analyzer:
+    image: football_match_analyzer:devel
+    container_name: football_match_analyzer
+    stdin_open: true
+    tty: true
+    shm_size: '4g'
+    working_dir: ${PWD}
+    environment:
+      - INPUT_VIDEOS_DIR=/app/input_videos
+      - OUTPUT_VIDEOS_DIR=/app/output_videos
+      - STUBS_DIR=/app/stubs
+      - MODELS_DIR=/app/models
+    volumes:
+      - ${PWD}:${PWD}
+      - ${PWD}/input_videos:/app/input_videos
+      - ${PWD}/output_videos:/app/output_videos
+      - ${PWD}/stubs:/app/stubs
+      - ${PWD}/models:/app/models
+    # entrypoint: ["/bin/bash"]
