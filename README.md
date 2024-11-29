@@ -20,3 +20,7 @@ This repository is designed for automated sports video analytics. It processes i
 - Draws bounding boxes, ellipses, and triangles to represent players, referees, and ball positions
 - Displays team ball possession statistics as a percentage on the output video
 - Annotates player speeds and distances directly onto the video
+
+
+## usages
+run docker compose -f docker/docker.compose.prod.yml up -d
