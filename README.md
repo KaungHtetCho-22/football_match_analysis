@@ -28,9 +28,12 @@ To start the application, run the following command:
 
 ```bash
 docker-compose -f docker/docker.compose.prod.yml up -d
+```
 
 To start the application manually
 
+```bash
 git clone <repository-url>
 cd <repository-directory>
 python main.py
+```
