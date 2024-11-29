@@ -22,5 +22,15 @@ This repository is designed for automated sports video analytics. It processes i
 - Annotates player speeds and distances directly onto the video
 
 
-## usages
-run docker compose -f docker/docker.compose.prod.yml up -d
+## Usage
+
+To start the application, run the following command:
+
+```bash
+docker-compose -f docker/docker.compose.prod.yml up -d
+
+To start the application manually
+
+git clone <repository-url>
+cd <repository-directory>
+python main.py
